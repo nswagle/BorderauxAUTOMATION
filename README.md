@@ -21,8 +21,8 @@ a. Risikostart and risiko end
 b. Vertragsbeginn gem. Zertifikat and Vertragsende gem. Zertifikat/voraussichtliches Vertragsende
 c. checking for schadendatum is before schadenanmeldung.
 4. 	Versicherungssumme is greater than schadenbetrag bezahlt
-# Duplicate_zendesk_in table: This column will list down the duplicates zendesk no. which are present 
-# Diff_risk_end_start_Error(zendesk): This column will list down if there are any errors in risikostart and risikoend
-# Diff_vertrag_end_start_Error(zendesk): This column will list down if there are any errors in Vertragsbeginn gem. Zertifikat and Vertragsende gem. Zertifikat/voraussichtliches Vertragsende
+ Duplicate_zendesk_in table: This column will list down the duplicates zendesk no. which are present 
+ Diff_risk_end_start_Error(zendesk): This column will list down if there are any errors in risikostart and risikoend
+ Diff_vertrag_end_start_Error(zendesk): This column will list down if there are any errors in Vertragsbeginn gem. Zertifikat and Vertragsende gem. Zertifikat/voraussichtliches Vertragsende
 
 
