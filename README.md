@@ -26,7 +26,7 @@ Duplicate_zendesk_in table: This column will list down the duplicates zendesk no
 Diff_risk_end_start_Error(zendesk): This column will list down if there are any errors in risikostart and risikoend
 Diff_vertrag_end_start_Error(zendesk): This column will list down if there are any errors in Vertragsbeginn gem. Zertifikat and Vertragsende gem. Zertifikat/voraussichtliches Vertragsende
 
-# getsafe 
+# B. getsafe 
 1. Missing values are highlighted for:
 a. vertical
 b. product
@@ -36,13 +36,13 @@ c. claim type and others
 4.Checked for duplicates for claims no. and if there are any duplicates the column we need to check is "Duplicates_inClaimsno".
 5. checking for whether policy end date is after policy start date. To check if error are present, the column is ""PolicyStartend_falseinfo(claims number"
 
-# Helvetia claims(TPA)
+# C. Helvetia claims(TPA)
 1. Schadenbetrag bezahlt (SB bereits abgezogen) = TPA Rechnungbetrag - Selbstbehalt
 2. Status should all be übernommen.
 3. checked for zendesk duplicates if present then check the column "duplcate_zendesk_list"
 4. Checked for if there are any error present in riskoende-risikostart, Vertragsende gem. Zertifikat/voraussichtliches Vertragsende-Vertragsbeginn gem. Zertifikat. The results you may find it in "DifferenceRisk", "Differencevertrag" respectively.
 
-# Trias claims
+# D. Trias claims
 1. Duplicate check for Zendesk no. has been done and the results are stored in the "Duplicate_zendesk_in table". 
 2. Missing values are highlighted for:
 a. Vertragsbeginn gem. Zertifikat
@@ -60,7 +60,7 @@ Duplicate_zendesk_in table: This column will list down the duplicates zendesk no
 Diff_risk_end_start_Error(zendesk): This column will list down if there are any errors in risikostart and risikoend
 Diff_vertrag_end_start_Error(zendesk): This column will list down if there are any errors in Vertragsbeginn gem. Zertifikat and Vertragsende gem. Zertifikat/voraussichtliches Vertragsende.
 
-# GAVAG claims
+# E. GAVAG claims
 1. 1. Duplicate check for Zendesk no. has been done and the results are stored in the "Duplicate_zendesk_in table". 
 2. Missing values are highlighted for:
 a. Sitz des händler
@@ -68,7 +68,7 @@ b. fallart
 c. schaden anmeldung and other schaden
 3. Schaden anmeldung date should be always greater than schadendatum.
 
-# Helvetia claims(RS_B)
+# F. Helvetia claims(RS_B)
 1. Duplicate check for Zendesk no. has been done and the results are stored in the "Duplicate_zendesk_in table". 
 2. Missing values are highlighted for:
 a. Sitz des händler
