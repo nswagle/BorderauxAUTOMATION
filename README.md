@@ -79,3 +79,17 @@ d. TPA and others.
 a. Risikostart and risiko end
 b. Vertragsbeginn gem. Zertifikat and Vertragsende gem. Zertifikat/voraussichtliches Vertragsende
 
+
+# BordereauxAUTOMATION(Sales)
+In this Bordereaux auomation. we have sales prüflogik for the following risk carriers
+A. Getsafe sales
+B. Helvetia Risikofortfall
+C. Helvetia Sales
+D. Trias sales
+E. GAVAG sales
+F. LV1871 sales
+
+# A.Getsafe sales
+1. Duplicate check for Customer contract no. has been done and the results are stored in the "Duplicates_in_Customer Contract Number".
+2. Underwriting date should be less than policy start date. If not then their zendesk no. are listed in the column "Underwriting_>_policy_start_date(Customer Contract Number)"
+3. 
