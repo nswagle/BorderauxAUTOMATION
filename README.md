@@ -92,4 +92,48 @@ F. LV1871 sales
 # A.Getsafe sales
 1. Duplicate check for Customer contract no. has been done and the results are stored in the "Duplicates_in_Customer Contract Number".
 2. Underwriting date should be less than policy start date. If not then their zendesk no. are listed in the column "Underwriting_>_policy_start_date(Customer Contract Number)"
-3. 
+3. Highlighting missing values: vertical, product group, product getsafe, product partner, market, isurance object detail.
+4. Policy end date should be later than policy start date. if not then check the difference of the dates in "DifferencePolicy(In days)". If there are any negative dates mentioned then we have an error.
+5. For every policy runtime we have we have a specific value
+Policy Runtime-         premium interval
+1 Month-                    P1M
+1 Year-                     P1Y
+24months-                   P1I
+
+# B. HELVETIA Risikofortfall
+1.Risikonettobeitrag(New) should be equal to multiplication of Verkaufpreis and  Risikonettobeitrag(old)
+2.Risikobruttobeitrag(New) should be equal to multiplication of Verkaufpreis and  Risikobruttobeitrag(old)
+3.Versicherungsteuer(New)  should be equal to multiplication of Verkaufpreis and  Versicherungsteuer(old)
+4.Duplicate check for Zertifikat no. has been done and the results are stored in the "Duplicates_inZeertifikatnummer"
+5.Vertragsende should be after vertrags beginn if not then the error can be identified out by difference of them stored in "VDifferenceRisk"
+6.Risikoende should be after risikostart if not then the error can be identified out by difference of them stored in "RDifferenceRisk"
+7.In fallart the data should be risikofortfall or beitragsrückerstattung. If it is something else as schaden auszahlung then convert it to  risikofortfall or beitragsrückerstattung based on Verwendungszweck	R,B
+8.Highlighting the missing values in Sitzdes handler and other columns.
+
+# C. Helvetia sales
+1. Duplicate check for Zertifikat no. has been done and the results are stored in the "Duplicates_inZeertifikatnummer"
+2. Highlighting the missing values in product bezeichnung and other columns.
+3. Vertragsende should be after vertrags beginn if not then the error can be identified out by difference of them stored in "VDifferenceRisk"
+4. Risikoende should be after risikostart if not then the error can be identified out by difference of them stored in "RDifferenceRisk"
+5. For merging the data of helvetia sales and helvetia risikofortfall, Please check mergingsheets.py file.
+
+# D. Trias sales
+1. Zertikat no. and Periode auf Bestellebene values are grouped in "groupingby.xlsx".
+2. Buchung datum should be less than equal to period beginn. if not then their zendesk no. are present here "Buchungdatum which are > period_beginn(Zertifikat NO.)"
+3. Note:Wichtig!! For every außerordentliche Kündigung zum we should have Kündigungsgrund. This data will be present in output code but not onto finalform trias. If the count of both are same then no worries and if not then manually it can be checked.
+4. Periodende should be after Periodstart if not then the error can be identified out by difference of them stored in "Differenceperiod_biginn_end" if negative dates difference present then we have an error
+5. Highlighting the missing values in Qualitat, insurance basis and others.
+
+# E. Gavag Sales
+1. Duplicate check for Zertifikat no. has been done and the results are stored in the "Duplicates_inZeertifikatnummer"
+2. Highlighting the missing values in product bezeichnung and other columns.
+3. Kaufdatum should be less than vertragsbeginn and if not then then their zertifikat no. are listed down in "kaufdatum greater than vertragsbeginn(Zertifikat no. for those)" column.
+4. Vertragsende should be after vertrags beginn if not then the error can be identified out by difference of them stored in "VDifferenceRisk"
+5. Risikoende should be after risikostart if not then the error can be identified out by difference of them stored in "RDifferenceRisk"
+6. ende der versicherung should be after Beginn der... if not then the error can be identified out by difference of them stored in "RDifferenceRisk"
+# F. LV1871 sales
+1. Zertikat no. and Periode auf Bestellebene values are grouped in "groupingby.xlsx".
+2. Buchung datum should be less than equal to period beginn. if not then their zendesk no. are present here "Buchungdatum which are > period_beginn(Zertifikat NO.)"
+3. Note:Wichtig!! For every außerordentliche Kündigung zum we should have Kündigungsgrund. This data will be present in output code but not onto finalform trias. If the count of both are same then no worries and if not then manually it can be checked.
+4. Periodende should be after Periodstart if not then the error can be identified out by difference of them stored in "Differenceperiod_biginn_end" if negative dates difference present then we have an error
+5. Highlighting the missing values in Qualitat, insurance basis and others.
